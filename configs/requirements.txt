@@ -1,0 +1,39 @@
+# Core libraries
+numpy
+pandas
+geopandas
+shapely
+matplotlib
+seaborn
+
+# Big Data Processing
+# pyspark
+# apache-sedona
+
+# Geospatial libraries
+fiona
+gdal
+rasterio
+pyproj
+rtree
+h3
+h3pandas
+owslib  # Para acceso a WFS del IGN
+
+# Data processing & ML
+scipy
+scikit-learn
+
+# Database & ORMs
+sqlalchemy
+psycopg2-binary
+alembic
+
+# API
+fastapi
+uvicorn
+
+# Visualization
+streamlit
+keplergl
+folium

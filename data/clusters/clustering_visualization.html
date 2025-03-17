@@ -1,0 +1,180 @@
+
+        <!DOCTYPE html>
+        <html>
+        <head>
+            <title>Análisis de Clusters de Estaciones</title>
+            <style>
+                body { font-family: Arial, sans-serif; margin: 20px; }
+                .cluster-card { border: 1px solid #ccc; margin: 10px; padding: 15px; border-radius: 5px; }
+                .cluster-0 { background-color: #e6f7ff; }
+                .cluster-1 { background-color: #fff7e6; }
+                .cluster-2 { background-color: #f6ffed; }
+                .cluster-3 { background-color: #fff1f0; }
+                .cluster-4 { background-color: #f9f0ff; }
+                h1, h2 { color: #333; }
+                table { border-collapse: collapse; width: 100%; }
+                th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+                th { background-color: #f2f2f2; }
+            </style>
+        </head>
+        <body>
+            <h1>Análisis de Clusters de Estaciones</h1>
+            <p>Número de clusters: 3</p>
+            <h2>Resumen de Clusters</h2>
+        
+            <div class="cluster-card cluster-0">
+                <h3>Cluster 0</h3>
+                <p>Estaciones: 432 (33.3%)</p>
+                <p>Viajes promedio: 489.7</p>
+                <p>Duración promedio: 1016.4 segundos</p>
+                
+                <h4>Distribución por ciudad:</h4>
+                <ul>
+            <li>San Francisco: 270 estaciones</li><li>New York: 161 estaciones</li><li>nyc: 1 estaciones</li>
+                </ul>
+                
+                <h4>Patrones de features:</h4>
+                <table>
+                    <tr>
+                        <th>Feature</th>
+                        <th>Valor promedio</th>
+                    </tr>
+            
+                    <tr>
+                        <td>Total Trips Sim</td>
+                        <td>489.72</td>
+                    </tr>
+                
+                    <tr>
+                        <td>Rush Hour Trips</td>
+                        <td>222.46</td>
+                    </tr>
+                
+                    <tr>
+                        <td>Avg Duration</td>
+                        <td>1016.39</td>
+                    </tr>
+                
+                    <tr>
+                        <td>Weekend Ratio</td>
+                        <td>0.64</td>
+                    </tr>
+                
+                    <tr>
+                        <td>Balance Ratio</td>
+                        <td>0.99</td>
+                    </tr>
+                
+                    <tr>
+                        <td>Trip Balance</td>
+                        <td>-12.50</td>
+                    </tr>
+                
+                </table>
+            </div>
+            
+            <div class="cluster-card cluster-1">
+                <h3>Cluster 1</h3>
+                <p>Estaciones: 414 (31.9%)</p>
+                <p>Viajes promedio: 518.4</p>
+                <p>Duración promedio: 939.5 segundos</p>
+                
+                <h4>Distribución por ciudad:</h4>
+                <ul>
+            <li>San Francisco: 253 estaciones</li><li>New York: 157 estaciones</li><li>sf: 3 estaciones</li><li>nyc: 1 estaciones</li>
+                </ul>
+                
+                <h4>Patrones de features:</h4>
+                <table>
+                    <tr>
+                        <th>Feature</th>
+                        <th>Valor promedio</th>
+                    </tr>
+            
+                    <tr>
+                        <td>Total Trips Sim</td>
+                        <td>518.40</td>
+                    </tr>
+                
+                    <tr>
+                        <td>Rush Hour Trips</td>
+                        <td>296.76</td>
+                    </tr>
+                
+                    <tr>
+                        <td>Avg Duration</td>
+                        <td>939.53</td>
+                    </tr>
+                
+                    <tr>
+                        <td>Weekend Ratio</td>
+                        <td>0.52</td>
+                    </tr>
+                
+                    <tr>
+                        <td>Balance Ratio</td>
+                        <td>1.05</td>
+                    </tr>
+                
+                    <tr>
+                        <td>Trip Balance</td>
+                        <td>4.74</td>
+                    </tr>
+                
+                </table>
+            </div>
+            
+            <div class="cluster-card cluster-2">
+                <h3>Cluster 2</h3>
+                <p>Estaciones: 450 (34.7%)</p>
+                <p>Viajes promedio: 491.0</p>
+                <p>Duración promedio: 1141.2 segundos</p>
+                
+                <h4>Distribución por ciudad:</h4>
+                <ul>
+            <li>San Francisco: 281 estaciones</li><li>New York: 164 estaciones</li><li>nyc: 3 estaciones</li><li>sf: 2 estaciones</li>
+                </ul>
+                
+                <h4>Patrones de features:</h4>
+                <table>
+                    <tr>
+                        <th>Feature</th>
+                        <th>Valor promedio</th>
+                    </tr>
+            
+                    <tr>
+                        <td>Total Trips Sim</td>
+                        <td>491.04</td>
+                    </tr>
+                
+                    <tr>
+                        <td>Rush Hour Trips</td>
+                        <td>229.86</td>
+                    </tr>
+                
+                    <tr>
+                        <td>Avg Duration</td>
+                        <td>1141.22</td>
+                    </tr>
+                
+                    <tr>
+                        <td>Weekend Ratio</td>
+                        <td>0.34</td>
+                    </tr>
+                
+                    <tr>
+                        <td>Balance Ratio</td>
+                        <td>0.94</td>
+                    </tr>
+                
+                    <tr>
+                        <td>Trip Balance</td>
+                        <td>3.60</td>
+                    </tr>
+                
+                </table>
+            </div>
+            
+        </body>
+        </html>
+        

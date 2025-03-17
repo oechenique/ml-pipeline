@@ -1,0 +1,217 @@
+
+            <!DOCTYPE html>
+            <html>
+            <head>
+                <title>Rebalancing Plan - Bike Sharing</title>
+                <style>
+                    body { font-family: Arial, sans-serif; margin: 20px; }
+                    .rebalance-card { border: 1px solid #ccc; margin: 10px; padding: 15px; border-radius: 5px; }
+                    .summary { background-color: #f7f7f7; }
+                    .action { background-color: #e6f7ff; }
+                    h1, h2, h3 { color: #333; }
+                    table { border-collapse: collapse; width: 100%; }
+                    th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+                    th { background-color: #f2f2f2; }
+                </style>
+            </head>
+            <body>
+                <h1>Rebalancing Plan - Bike Sharing</h1>
+                <p>Date: 2025-03-16</p>
+                
+                <div class="rebalance-card summary">
+                    <h2>Summary</h2>
+                    <p>Stations with deficit: 42</p>
+                    <p>Stations with surplus: 53</p>
+                    <p>Recommended rebalancing actions: 10</p>
+                </div>
+                
+                <div class="rebalance-card">
+                    <h2>Recommended Rebalancing Actions</h2>
+                    <table>
+                        <tr>
+                            <th>Origin</th>
+                            <th>Destination</th>
+                            <th>Bikes</th>
+                            <th>Critical Time</th>
+                            <th>Cluster</th>
+                        </tr>
+            
+                        <tr>
+                            <td>162</td>
+                            <td>2006</td>
+                            <td>10</td>
+                            <td>Evening (16-19h)</td>
+                            <td>1</td>
+                        </tr>
+                
+                        <tr>
+                            <td>2005</td>
+                            <td>151</td>
+                            <td>10</td>
+                            <td>Evening (16-19h)</td>
+                            <td>0</td>
+                        </tr>
+                
+                        <tr>
+                            <td>148</td>
+                            <td>147</td>
+                            <td>10</td>
+                            <td>Evening (16-19h)</td>
+                            <td>0</td>
+                        </tr>
+                
+                        <tr>
+                            <td>158</td>
+                            <td>225</td>
+                            <td>10</td>
+                            <td>Evening (16-19h)</td>
+                            <td>1</td>
+                        </tr>
+                
+                        <tr>
+                            <td>24</td>
+                            <td>168</td>
+                            <td>10</td>
+                            <td>Evening (16-19h)</td>
+                            <td>1</td>
+                        </tr>
+                
+                        <tr>
+                            <td>26</td>
+                            <td>127</td>
+                            <td>10</td>
+                            <td>Evening (16-19h)</td>
+                            <td>1</td>
+                        </tr>
+                
+                        <tr>
+                            <td>169</td>
+                            <td>251</td>
+                            <td>10</td>
+                            <td>Evening (16-19h)</td>
+                            <td>1</td>
+                        </tr>
+                
+                        <tr>
+                            <td>177</td>
+                            <td>229</td>
+                            <td>10</td>
+                            <td>Evening (16-19h)</td>
+                            <td>0</td>
+                        </tr>
+                
+                        <tr>
+                            <td>180</td>
+                            <td>237</td>
+                            <td>10</td>
+                            <td>Evening (16-19h)</td>
+                            <td>2</td>
+                        </tr>
+                
+                        <tr>
+                            <td>27</td>
+                            <td>116</td>
+                            <td>10</td>
+                            <td>Evening (16-19h)</td>
+                            <td>1</td>
+                        </tr>
+                
+                    </table>
+                </div>
+                
+                <div class="rebalance-card">
+                    <h2>Top 10 Stations with Highest Deficit</h2>
+                    <table>
+                        <tr>
+                            <th>Station</th>
+                            <th>Capacity</th>
+                            <th>Morning Deficit</th>
+                            <th>Evening Deficit</th>
+                            <th>Cluster</th>
+                        </tr>
+            
+                        <tr>
+                            <td>2006</td>
+                            <td>20</td>
+                            <td>15.0</td>
+                            <td>77.0</td>
+                            <td>1</td>
+                        </tr>
+                
+                        <tr>
+                            <td>151</td>
+                            <td>20</td>
+                            <td>4.0</td>
+                            <td>55.0</td>
+                            <td>0</td>
+                        </tr>
+                
+                        <tr>
+                            <td>147</td>
+                            <td>20</td>
+                            <td>-3.0</td>
+                            <td>39.0</td>
+                            <td>0</td>
+                        </tr>
+                
+                        <tr>
+                            <td>225</td>
+                            <td>20</td>
+                            <td>-1.0</td>
+                            <td>38.0</td>
+                            <td>1</td>
+                        </tr>
+                
+                        <tr>
+                            <td>168</td>
+                            <td>20</td>
+                            <td>-4.0</td>
+                            <td>34.0</td>
+                            <td>1</td>
+                        </tr>
+                
+                        <tr>
+                            <td>127</td>
+                            <td>20</td>
+                            <td>-1.0</td>
+                            <td>36.0</td>
+                            <td>1</td>
+                        </tr>
+                
+                        <tr>
+                            <td>251</td>
+                            <td>20</td>
+                            <td>-1.0</td>
+                            <td>31.0</td>
+                            <td>1</td>
+                        </tr>
+                
+                        <tr>
+                            <td>229</td>
+                            <td>20</td>
+                            <td>-2.0</td>
+                            <td>25.0</td>
+                            <td>0</td>
+                        </tr>
+                
+                        <tr>
+                            <td>237</td>
+                            <td>20</td>
+                            <td>-1.0</td>
+                            <td>24.0</td>
+                            <td>2</td>
+                        </tr>
+                
+                        <tr>
+                            <td>116</td>
+                            <td>20</td>
+                            <td>-2.0</td>
+                            <td>23.0</td>
+                            <td>1</td>
+                        </tr>
+                
+                    </table>
+                </div>
+            </body>
+            </html>
+            

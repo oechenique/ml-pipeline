@@ -1,0 +1,20 @@
+{
+  "data_coverage": {
+    "start_date": "2013-07-01",
+    "end_date": "2023-03-31",
+    "total_trips": 2549987,
+    "daily_records": 1241,
+    "hourly_patterns": 7,
+    "weekly_records": 181,
+    "monthly_records": 43
+  },
+  "stationarity": {
+    "is_stationary": true,
+    "adf_pvalue": 4.059311172905758e-15
+  },
+  "patterns": {
+    "peak_hours": [],
+    "peak_days": [],
+    "has_weekly_seasonality": true
+  }
+}

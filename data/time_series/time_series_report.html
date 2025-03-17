@@ -1,0 +1,79 @@
+
+        <!DOCTYPE html>
+        <html>
+        <head>
+            <title>Bike Sharing Time Series Analysis</title>
+            <style>
+                body { font-family: Arial, sans-serif; margin: 20px; }
+                .section { border: 1px solid #ccc; margin: 10px; padding: 15px; border-radius: 5px; }
+                .summary { background-color: #f8f9fa; }
+                h1, h2, h3 { color: #333; }
+                table { border-collapse: collapse; width: 100%; margin-bottom: 20px; }
+                th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+                th { background-color: #f2f2f2; }
+                .chart-container { margin: 20px 0; }
+                .forecast { background-color: #e6f7ff; }
+                .patterns { background-color: #f0f9e8; }
+            </style>
+        </head>
+        <body>
+            <h1>Bike Sharing Time Series Analysis</h1>
+            <p>Analysis date: 2025-03-16</p>
+            
+            <div class="section summary">
+                <h2>Data Summary</h2>
+                <table>
+                    <tr><th>Start Date</th><td>2013-07-01</td></tr>
+                    <tr><th>End Date</th><td>2023-03-31</td></tr>
+                    <tr><th>Total Trips</th><td>2,549,987</td></tr>
+                    <tr><th>Daily Records</th><td>1241</td></tr>
+                    <tr><th>Monthly Records</th><td>43</td></tr>
+                    <tr><th>Is Stationary</th><td>True</td></tr>
+                </table>
+            </div>
+            
+            <div class="section patterns">
+                <h2>Temporal Patterns</h2>
+                
+                <h3>Hourly Patterns</h3>
+                <p>Peak hours: N/A</p>
+                <p>Peak days: N/A</p>
+                <div class="chart-container">
+                    <img src="hourly_heatmap.png" alt="Hourly Heatmap" style="max-width:100%;">
+                </div>
+                
+                <h3>Daily Decomposition</h3>
+                <div class="chart-container">
+                    <img src="daily_decomposition.png" alt="Daily Decomposition" style="max-width:100%;">
+                </div>
+                
+                <h3>Monthly Trends</h3>
+                <div class="chart-container">
+                    <img src="monthly_trend.png" alt="Monthly Trends" style="max-width:100%;">
+                </div>
+            </div>
+            
+            <div class="section forecast">
+                <h2>Demand Forecast</h2>
+                
+                <h3>Prophet Model</h3>
+                <div class="chart-container">
+                    <img src="prophet_forecast.png" alt="Prophet Forecast" style="max-width:100%;">
+                </div>
+                <div class="chart-container">
+                    <img src="prophet_components.png" alt="Prophet Components" style="max-width:100%;">
+                </div>
+                
+                <h3>XGBoost Model</h3>
+                <div class="chart-container">
+                    <img src="xgboost_feature_importance.png" alt="XGBoost Feature Importance" style="max-width:100%;">
+                </div>
+                
+                <h3>Model Comparison</h3>
+                <div class="chart-container">
+                    <img src="forecast_comparison.png" alt="Forecast Comparison" style="max-width:100%;">
+                </div>
+            </div>
+        </body>
+        </html>
+        

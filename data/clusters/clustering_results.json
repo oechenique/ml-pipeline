@@ -1,0 +1,73 @@
+{
+  "n_clusters": 3,
+  "cluster_analysis": {
+    "cluster_0": {
+      "size": 432,
+      "percentage": 33.33333333333333,
+      "avg_trips": 489.7175925925926,
+      "avg_duration": 1016.3856846327637,
+      "city_distribution": {
+        "San Francisco": 270,
+        "New York": 161,
+        "nyc": 1
+      },
+      "feature_patterns": {
+        "total_trips_sim": 489.7175925925926,
+        "rush_hour_trips": 222.4550996183677,
+        "avg_duration": 1016.3856846327637,
+        "weekend_ratio": 0.6424196572001178,
+        "balance_ratio": 0.9922461748188157,
+        "trip_balance": -12.499985895455568
+      }
+    },
+    "cluster_1": {
+      "size": 414,
+      "percentage": 31.944444444444443,
+      "avg_trips": 518.4009661835748,
+      "avg_duration": 939.532901218675,
+      "city_distribution": {
+        "San Francisco": 253,
+        "New York": 157,
+        "sf": 3,
+        "nyc": 1
+      },
+      "feature_patterns": {
+        "total_trips_sim": 518.4009661835748,
+        "rush_hour_trips": 296.7558883648084,
+        "avg_duration": 939.532901218675,
+        "weekend_ratio": 0.520072039393892,
+        "balance_ratio": 1.05058973378344,
+        "trip_balance": 4.741908707541634
+      }
+    },
+    "cluster_2": {
+      "size": 450,
+      "percentage": 34.72222222222222,
+      "avg_trips": 491.03777777777776,
+      "avg_duration": 1141.2240706385116,
+      "city_distribution": {
+        "San Francisco": 281,
+        "New York": 164,
+        "nyc": 3,
+        "sf": 2
+      },
+      "feature_patterns": {
+        "total_trips_sim": 491.03777777777776,
+        "rush_hour_trips": 229.85918159588135,
+        "avg_duration": 1141.2240706385116,
+        "weekend_ratio": 0.33888333769902174,
+        "balance_ratio": 0.935544203794791,
+        "trip_balance": 3.60296090302901
+      }
+    }
+  },
+  "feature_importance": {
+    "total_trips_sim_norm": 0.5767558999609901,
+    "rush_hour_trips_norm": 0.5720527112519647,
+    "avg_duration_norm": 0.194303175943409,
+    "weekend_ratio_norm": 0.713937612693649,
+    "balance_ratio_norm": 0.16754055064261716,
+    "trip_balance_norm": 0.2763409813326173
+  },
+  "timestamp": "2025-03-15T23:06:32.483682"
+}

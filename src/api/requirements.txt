@@ -1,0 +1,16 @@
+# API Framework
+fastapi
+uvicorn
+
+# Database
+sqlalchemy
+psycopg2-binary
+
+# Geospatial
+geopandas
+shapely
+h3
+folium
+
+# Config
+python-dotenv

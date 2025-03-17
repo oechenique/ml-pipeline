@@ -1,0 +1,25 @@
+database:
+  name: geo_db
+  user: geo_user
+  password: "tu_contraseña_segura"
+  host: db
+  port: 5432
+
+data_sources:
+  osm:
+    url: "https://overpass-api.de/api/interpreter"
+    query_types:
+      - "shop=*"
+      - "amenity=*"
+      - "office=*"
+  ign_wfs:
+    url: "https://wms.ign.gob.ar/geoserver/ows"
+    layers:
+      country: "ign:pais"
+      province: "ign:provincia"
+      department: "ign:departamento"
+      locality: "ign:localidad_bahra"
+  hdx_population:
+    url: "https://data.worldpop.org/GIS/Population_Density/Global_2000_2020_1km/2020/ARG/arg_pd_2020_1km.tif"
+    resolution: 9
+    format: "GeoTIFF"

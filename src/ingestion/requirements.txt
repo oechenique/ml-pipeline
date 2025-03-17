@@ -1,0 +1,21 @@
+# Core
+numpy
+pandas
+geopandas
+shapely
+
+# Geospatial Processing
+fiona
+gdal
+rasterio
+pyproj
+rtree
+h3
+h3pandas
+owslib  # Para descargar WFS
+
+# Database
+sqlalchemy
+psycopg2-binary
+backoff
+tqdm

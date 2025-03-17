@@ -1,0 +1,15 @@
+{
+  "metrics": {
+    "train_rmse": 2.180056053005584,
+    "test_rmse": 2.2864712821823407,
+    "train_r2": 0.6338640976118008,
+    "test_r2": 0.5972464672598321
+  },
+  "top_features": {},
+  "model_type": "HistGradientBoostingRegressor",
+  "timestamp": "2025-03-16T01:31:10.347726",
+  "prediction_date": "2025-03-16T00:00:00",
+  "n_stations": 122,
+  "n_predictions": 2928,
+  "data_source": "historical_real_data"
+}

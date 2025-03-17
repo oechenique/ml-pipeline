@@ -1,0 +1,241 @@
+
+        <!DOCTYPE html>
+        <html>
+        <head>
+            <title>Demand Predictions - Bike Sharing</title>
+            <style>
+                body { font-family: Arial, sans-serif; margin: 20px; }
+                .prediction-card { border: 1px solid #ccc; margin: 10px; padding: 15px; border-radius: 5px; }
+                .summary { background-color: #f7f7f7; }
+                .high-demand { background-color: #f9e0e0; }
+                .low-demand { background-color: #e0f0ff; }
+                h1, h2, h3 { color: #333; }
+                table { border-collapse: collapse; width: 100%; }
+                th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+                th { background-color: #f2f2f2; }
+                .chart-container { height: 300px; margin: 20px 0; }
+            </style>
+            <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        </head>
+        <body>
+            <h1>Demand Predictions - Bike Sharing</h1>
+            <p>Prediction date: 2025-03-16</p>
+            
+            <div class="prediction-card summary">
+                <h2>Model Summary</h2>
+                <p>Trained with <strong>84,057</strong> real historical records</p>
+                <p>RMSE: 2.29</p>
+                <p>R2: 0.5972</p>
+                <p>Stations analyzed: 122</p>
+                <p>Clusters: 3</p>
+            </div>
+            
+            <div class="prediction-card">
+                <h2>Hourly Demand Distribution</h2>
+                <div class="chart-container">
+                    <canvas id="hourlyChart"></canvas>
+                </div>
+                <script>
+                var ctx = document.getElementById('hourlyChart').getContext('2d');
+                var hourlyChart = new Chart(ctx, {
+                    type: 'bar',
+                    data: {
+                        labels: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23],
+                        datasets: [{
+                            label: 'Average Demand',
+                            data: [1.158625396540442, 1.0365193372200034, 0.9453386828879639, 0.6164928213146191, 0.66378281558493, 0.700077988951497, 1.0558031676422452, 1.0854611759850965, 1.2857127091587996, 1.7190914710604368, 2.127366875420582, 2.5730915355426935, 2.939444259115545, 3.2040484209932303, 3.456170799803351, 3.40064556255258, 3.634804923564296, 3.8064029611309067, 3.507703506702377, 3.0670885049638645, 2.494411799670102, 2.0142336760719193, 1.7553204758628522, 1.4308570998059436],
+                            backgroundColor: 'rgba(54, 162, 235, 0.5)',
+                            borderColor: 'rgba(54, 162, 235, 1)',
+                            borderWidth: 1
+                        }]
+                    },
+                    options: {
+                        scales: {
+                            y: {
+                                beginAtZero: true,
+                                title: {
+                                    display: true,
+                                    text: 'Predicted Trips'
+                                }
+                            },
+                            x: {
+                                title: {
+                                    display: true,
+                                    text: 'Hour of Day'
+                                }
+                            }
+                        }
+                    }
+                });
+                </script>
+            </div>
+            
+            <div class="prediction-card high-demand">
+                <h2>Stations with Highest Predicted Demand</h2>
+                <table>
+                    <tr>
+                        <th>Station</th>
+                        <th>Cluster</th>
+                        <th>Average Demand</th>
+                        <th>Maximum Demand</th>
+                    </tr>
+        
+                    <tr>
+                        <td>2006</td>
+                        <td>1</td>
+                        <td>12.5</td>
+                        <td>23.3</td>
+                    </tr>
+            
+                    <tr>
+                        <td>151</td>
+                        <td>0</td>
+                        <td>9.0</td>
+                        <td>18.8</td>
+                    </tr>
+            
+                    <tr>
+                        <td>147</td>
+                        <td>0</td>
+                        <td>5.7</td>
+                        <td>13.1</td>
+                    </tr>
+            
+                    <tr>
+                        <td>225</td>
+                        <td>1</td>
+                        <td>5.7</td>
+                        <td>15.2</td>
+                    </tr>
+            
+                    <tr>
+                        <td>127</td>
+                        <td>1</td>
+                        <td>5.4</td>
+                        <td>12.5</td>
+                    </tr>
+            
+                    <tr>
+                        <td>251</td>
+                        <td>1</td>
+                        <td>5.3</td>
+                        <td>11.6</td>
+                    </tr>
+            
+                    <tr>
+                        <td>237</td>
+                        <td>2</td>
+                        <td>5.1</td>
+                        <td>9.7</td>
+                    </tr>
+            
+                    <tr>
+                        <td>168</td>
+                        <td>1</td>
+                        <td>5.1</td>
+                        <td>12.2</td>
+                    </tr>
+            
+                    <tr>
+                        <td>236</td>
+                        <td>2</td>
+                        <td>5.0</td>
+                        <td>9.8</td>
+                    </tr>
+            
+                    <tr>
+                        <td>229</td>
+                        <td>0</td>
+                        <td>4.7</td>
+                        <td>10.3</td>
+                    </tr>
+            
+                </table>
+            </div>
+            
+            <div class="prediction-card low-demand">
+                <h2>Stations with Lowest Predicted Demand</h2>
+                <table>
+                    <tr>
+                        <th>Station</th>
+                        <th>Cluster</th>
+                        <th>Average Demand</th>
+                        <th>Maximum Demand</th>
+                    </tr>
+        
+                    <tr>
+                        <td>177</td>
+                        <td>0</td>
+                        <td>0.5</td>
+                        <td>0.8</td>
+                    </tr>
+            
+                    <tr>
+                        <td>209</td>
+                        <td>2</td>
+                        <td>0.5</td>
+                        <td>0.8</td>
+                    </tr>
+            
+                    <tr>
+                        <td>149</td>
+                        <td>2</td>
+                        <td>0.6</td>
+                        <td>0.8</td>
+                    </tr>
+            
+                    <tr>
+                        <td>211</td>
+                        <td>2</td>
+                        <td>0.6</td>
+                        <td>0.8</td>
+                    </tr>
+            
+                    <tr>
+                        <td>26</td>
+                        <td>1</td>
+                        <td>0.6</td>
+                        <td>0.9</td>
+                    </tr>
+            
+                    <tr>
+                        <td>148</td>
+                        <td>0</td>
+                        <td>0.6</td>
+                        <td>0.9</td>
+                    </tr>
+            
+                    <tr>
+                        <td>12</td>
+                        <td>2</td>
+                        <td>0.6</td>
+                        <td>0.8</td>
+                    </tr>
+            
+                    <tr>
+                        <td>178</td>
+                        <td>0</td>
+                        <td>0.6</td>
+                        <td>0.9</td>
+                    </tr>
+            
+                    <tr>
+                        <td>246</td>
+                        <td>0</td>
+                        <td>0.6</td>
+                        <td>1.1</td>
+                    </tr>
+            
+                    <tr>
+                        <td>119</td>
+                        <td>2</td>
+                        <td>0.6</td>
+                        <td>0.9</td>
+                    </tr>
+            
+                </table>
+            </div>
+            
+        </body>
+        </html>
+        

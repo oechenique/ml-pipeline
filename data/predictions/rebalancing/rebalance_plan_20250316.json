@@ -1,0 +1,82 @@
+[
+  {
+    "origin_station": "162",
+    "destination_station": "2006",
+    "bikes_to_move": 10,
+    "peak_time": "Evening (16-19h)",
+    "deficit": 77.0,
+    "cluster": 1
+  },
+  {
+    "origin_station": "2005",
+    "destination_station": "151",
+    "bikes_to_move": 10,
+    "peak_time": "Evening (16-19h)",
+    "deficit": 55.0,
+    "cluster": 0
+  },
+  {
+    "origin_station": "148",
+    "destination_station": "147",
+    "bikes_to_move": 10,
+    "peak_time": "Evening (16-19h)",
+    "deficit": 39.0,
+    "cluster": 0
+  },
+  {
+    "origin_station": "158",
+    "destination_station": "225",
+    "bikes_to_move": 10,
+    "peak_time": "Evening (16-19h)",
+    "deficit": 38.0,
+    "cluster": 1
+  },
+  {
+    "origin_station": "24",
+    "destination_station": "168",
+    "bikes_to_move": 10,
+    "peak_time": "Evening (16-19h)",
+    "deficit": 34.0,
+    "cluster": 1
+  },
+  {
+    "origin_station": "26",
+    "destination_station": "127",
+    "bikes_to_move": 10,
+    "peak_time": "Evening (16-19h)",
+    "deficit": 36.0,
+    "cluster": 1
+  },
+  {
+    "origin_station": "169",
+    "destination_station": "251",
+    "bikes_to_move": 10,
+    "peak_time": "Evening (16-19h)",
+    "deficit": 31.0,
+    "cluster": 1
+  },
+  {
+    "origin_station": "177",
+    "destination_station": "229",
+    "bikes_to_move": 10,
+    "peak_time": "Evening (16-19h)",
+    "deficit": 25.0,
+    "cluster": 0
+  },
+  {
+    "origin_station": "180",
+    "destination_station": "237",
+    "bikes_to_move": 10,
+    "peak_time": "Evening (16-19h)",
+    "deficit": 24.0,
+    "cluster": 2
+  },
+  {
+    "origin_station": "27",
+    "destination_station": "116",
+    "bikes_to_move": 10,
+    "peak_time": "Evening (16-19h)",
+    "deficit": 23.0,
+    "cluster": 1
+  }
+]

@@ -1,0 +1,21 @@
+{
+  "timestamp": "2025-03-16T03:14:40.916992",
+  "time_series_analysis": {
+    "status": "success",
+    "data_coverage": {
+      "start_date": "2013-07-01",
+      "end_date": "2023-03-31",
+      "total_trips": 2549987
+    },
+    "metrics": {
+      "prophet_rmse": 2298.7513395573706,
+      "xgboost_rmse": null
+    },
+    "output_dir": "/app/data/time_series"
+  },
+  "comparison_results": {
+    "status": "warning",
+    "message": "No overlapping dates for comparison"
+  },
+  "status": "success"
+}

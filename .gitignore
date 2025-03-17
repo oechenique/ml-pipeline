@@ -1,0 +1,125 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual Environment
+.env
+.env.test
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+.project
+.pydevproject
+.settings
+
+# Jupyter Notebook
+.ipynb_checkpoints
+*.ipynb
+
+# Data and Models
+data/raw/*
+data/processed/*
+data/final/*
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+!data/final/.gitkeep
+models/*.pkl
+models/*.h5
+models/*.joblib
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Docker
+.docker/
+docker-compose.override.yml
+
+# Testing
+.coverage
+coverage.xml
+htmlcov/
+.pytest_cache/
+.tox/
+nosetests.xml
+coverage/
+
+# Documentation
+docs/_build/
+site/
+
+# Database
+*.sqlite3
+*.db
+
+# System
+.DS_Store
+Thumbs.db
+*.bak
+*.tmp
+*.swp
+
+# Project specific
+*.geojson
+*.parquet
+*.tiff
+*.tif
+*.shp
+*.shx
+*.dbf
+*.prj
+*.h3
+*.csv
+!tests/data/*.csv  # Permitir archivos CSV de test
+
+# Streamlit
+.streamlit/secrets.toml
+
+# MLflow
+mlruns/
+mlartifacts/
+
+# Credentials
+*.pem
+*.key
+*.crt
+*.cer
+.env*
+!.env.example
+
+# Other
+node_modules/
+*.pid
+*.seed
+*.pid.lock

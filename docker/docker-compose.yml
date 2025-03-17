@@ -1,0 +1,18 @@
+version: "3.8"
+services:
+  spark:
+    build: .
+    container_name: spark-sedona
+    hostname: spark
+    ports:
+      - "4040:4040"  # UI Spark
+      - "7077:7077"  # Spark Master
+      - "8080:8080"  # Spark Web UI
+      - "8888:8888"  # Jupyter Notebook
+    volumes:
+      - ../notebooks:/notebooks  # Montar las notebooks
+      - ../data:/data            # Montar la carpeta de datos
+    environment:
+      - SPARK_DRIVER_MEMORY=4g
+      - SPARK_EXECUTOR_MEMORY=8g
+    command: ["/entrypoint.sh"]
